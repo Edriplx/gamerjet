@@ -330,42 +330,44 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
+            'text' => 'Aulas',
+            'url'  => 'http://127.0.0.1:8000/aulas',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'Horarios',
+            'url'  => 'http://127.0.0.1:8000/horarios',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'Jugadores',
+            'url'  => 'http://127.0.0.1:8000/jugadores',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'Equipos',
+            'url'  => 'http://127.0.0.1:8000/equipos',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'Partida Grupal',
+            'url'  => 'http://127.0.0.1:8000/partidagrs',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'Partida Individual',
+            'url'  => 'http://127.0.0.1:8000/partidains',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'Inscripcion grupal',
+            'url'  => 'http://127.0.0.1:8000/inscripciongrs',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'Inscripcion individual',
+            'url'  => 'http://127.0.0.1:8000/inscripcionins',
+            'icon' => 'fas fa-fw fa-lock',
         ],
     ],
 

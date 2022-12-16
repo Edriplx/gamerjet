@@ -37,6 +37,30 @@
                     <ul class="navbar-nav mr-auto">
 						<!--Nav Bar Hooks - Do not delete!!-->
 						<li class="nav-item">
+                            <a href="{{ url('/inscripcionins') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Inscripcionins</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/inscripciongrs') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Inscripciongrs</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/partidains') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Partidains</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/partidagrs') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Partidagrs</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/jugadores') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Jugadores</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/equipos') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Equipos</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/horarios') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Horarios</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/aulas') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Aulas</a> 
+                        </li>
+						<li class="nav-item">
                             <a href="{{ url('/videojuegos') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Videojuegos</a> 
                         </li>
 						<li class="nav-item">
