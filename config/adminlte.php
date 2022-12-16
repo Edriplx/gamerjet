@@ -62,9 +62,9 @@ return [
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
     |
     */
-
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    /*/vendor/adminlte/dist/img/AdminLTElogo.png*/
+    'logo' => '<b>GAMER</b>FEST',
+    'logo_img' => 'https://th.bing.com/th/id/OIP.M-RTzE9JjRxk4WbfZMQBRwHaFq?pid=ImgDet&rs=1',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -314,7 +314,7 @@ return [
         [
             'text'        => 'Dashboard',
             'url'         => 'http://127.0.0.1:8000/dashboard',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-palette',
             //'label'       => "",
             'label_color' => 'success',
         ],
@@ -322,50 +322,52 @@ return [
         [
             'text' => 'Categorias',
             'url'  => 'http://127.0.0.1:8000/categorias',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-layer-group',
         ],
         [
             'text' => 'Videojuegos',
             'url'  => 'http://127.0.0.1:8000/videojuegos',
-            'icon' => 'fas fa-fw fa-lock',
+            'icon' => 'fa fa-gamepad',
         ],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
+            'text' => 'Aulas',
+            'url'  => 'http://127.0.0.1:8000/aulas',
+            'icon' => 'fas fa-house-user',
+        ],
+        [
+            'text' => 'Horarios',
+            'url'  => 'http://127.0.0.1:8000/horarios',
+            'icon' => 'fa fa-calendar',
+        ],
+        [
+            'text' => 'Jugadores',
+            'url'  => 'http://127.0.0.1:8000/jugadores',
+            'icon' => 'fas fa-user-ninja',
+        ],
+        [
+            'text' => 'Equipos',
+            'url'  => 'http://127.0.0.1:8000/equipos',
+            'icon' => 'fas fa-holly-berry',
+        ],
+        [
+            'text' => 'Partida Grupal',
+            'url'  => 'http://127.0.0.1:8000/partidagrs',
+            'icon' => 'fa fa-globe',
+        ],
+        [
+            'text' => 'Partida Individual',
+            'url'  => 'http://127.0.0.1:8000/partidains',
+            'icon' => 'fa fa-crosshairs',
+        ],
+        [
+            'text' => 'Inscripcion grupal',
+            'url'  => 'http://127.0.0.1:8000/inscripciongrs',
+            'icon' => 'fa fa-users',
+        ],
+        [
+            'text' => 'Inscripcion individual',
+            'url'  => 'http://127.0.0.1:8000/inscripcionins',
+            'icon' => 'fa fa-child',
         ],
     ],
 
