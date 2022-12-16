@@ -1,6 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\App;
+use App\Models\Categorias;
+use App\Models\Videojuegos;
+use App\Models\Aulas;
+use App\Models\Horarios;
 
 use Illuminate\Http\Request;
 
@@ -24,5 +29,15 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+}
+
+class DashboardControlador{
+
+    static public function ctrGetDatosDashboard(){
+
+        $datos = DashboardModelo::mdlGetDatosDashboard();
+
+        return $datos;
     }
 }

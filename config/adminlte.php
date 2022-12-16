@@ -333,47 +333,51 @@ return [
             'text' => 'Aulas',
             'url'  => 'http://127.0.0.1:8000/aulas',
 
-            'icon' => 'fas fa-house-user',
+            'icon' => 'fas fa-fw fa-lock',
+=======
+
         ],
         [
             'text' => 'Horarios',
             'url'  => 'http://127.0.0.1:8000/horarios',
-            'icon' => 'fa fa-calendar',
-
+            'icon' => 'fas fa-fw fa-lock',
+=======
         ],
         [
             'text' => 'Jugadores',
             'url'  => 'http://127.0.0.1:8000/jugadores',
-            'icon' => 'fas fa-user-ninja',
-
+            'icon' => 'fas fa-fw fa-lock',
+=======
         ],
         [
             'text' => 'Equipos',
             'url'  => 'http://127.0.0.1:8000/equipos',
-            'icon' => 'fas fa-holly-berry',
-
+            'icon' => 'fas fa-fw fa-lock',
+=======
         ],
         [
             'text' => 'Partida Grupal',
             'url'  => 'http://127.0.0.1:8000/partidagrs',
-            'icon' => 'fa fa-globe',
-
+            'icon' => 'fas fa-fw fa-lock',
+=======
         ],
         [
             'text' => 'Partida Individual',
             'url'  => 'http://127.0.0.1:8000/partidains',
-            'icon' => 'fa fa-crosshairs',
-
+            'icon' => 'fas fa-fw fa-lock',
+=======
         ],
         [
             'text' => 'Inscripcion grupal',
             'url'  => 'http://127.0.0.1:8000/inscripciongrs',
-            'icon' => 'fa fa-users',
+            'icon' => 'fas fa-fw fa-lock',
+=======
         ],
         [
             'text' => 'Inscripcion individual',
             'url'  => 'http://127.0.0.1:8000/inscripcionins',
-            'icon' => 'fa fa-child',
+            'icon' => 'fas fa-fw fa-lock',
+=======
         ],
     ],
 
