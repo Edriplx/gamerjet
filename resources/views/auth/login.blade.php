@@ -1,9 +1,9 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <img src="https://th.bing.com/th/id/OIP.M-RTzE9JjRxk4WbfZMQBRwHaFq?pid=ImgDet&rs=1" 
+            style="width:120px; height:120px; border-radius:50%"/> 
         </x-slot>
-
         <x-jet-validation-errors class="mb-4" />
 
         @if (session('status'))
