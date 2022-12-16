@@ -332,32 +332,38 @@ return [
         [
             'text' => 'Aulas',
             'url'  => 'http://127.0.0.1:8000/aulas',
+
             'icon' => 'fas fa-house-user',
         ],
         [
             'text' => 'Horarios',
             'url'  => 'http://127.0.0.1:8000/horarios',
             'icon' => 'fa fa-calendar',
+
         ],
         [
             'text' => 'Jugadores',
             'url'  => 'http://127.0.0.1:8000/jugadores',
             'icon' => 'fas fa-user-ninja',
+
         ],
         [
             'text' => 'Equipos',
             'url'  => 'http://127.0.0.1:8000/equipos',
             'icon' => 'fas fa-holly-berry',
+
         ],
         [
             'text' => 'Partida Grupal',
             'url'  => 'http://127.0.0.1:8000/partidagrs',
             'icon' => 'fa fa-globe',
+
         ],
         [
             'text' => 'Partida Individual',
             'url'  => 'http://127.0.0.1:8000/partidains',
             'icon' => 'fa fa-crosshairs',
+
         ],
         [
             'text' => 'Inscripcion grupal',
