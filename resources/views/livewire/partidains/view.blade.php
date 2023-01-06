@@ -7,8 +7,9 @@
 					<div style="display: flex; justify-content: space-between; align-items: center;">
 						<div class="float-left">
 							<h4><i class="fab fa-laravel text-info"></i>
-							Partidain Listing </h4>
+							Listado de Partidas Individuales </h4>
 						</div>
+
 						<div wire:poll.60s>
 							<code><h5>{{ now()->format('H:i:s') }} UTC</h5></code>
 						</div>
@@ -16,10 +17,10 @@
 						<div wire:poll.4s class="btn btn-sm btn-success" style="margin-top:0px; margin-bottom:0px;"> {{ session('message') }} </div>
 						@endif
 						<div>
-							<input wire:model='keyWord' type="text" class="form-control" name="search" id="search" placeholder="Search Partidains">
+							<input wire:model='keyWord' type="text" class="form-control" name="search" id="search" placeholder="Buscar Partida Individual">
 						</div>
 						<div class="btn btn-sm btn-info" data-toggle="modal" data-target="#createDataModal">
-						<i class="fa fa-plus"></i>  Add Partidains
+						<i class="fa fa-plus"></i>  Agregar Partida
 						</div>
 					</div>
 				</div>
@@ -37,15 +38,15 @@
 								<th>Tiempo Inicio</th>
 								<th>Fecha</th>
 								<th>Observacion</th>
-								<td>ACTIONS</td>
+								<td>Acciones</td>
 							</tr>
 						</thead>
 						<tbody>
 							@foreach($partidains as $row)
 							<tr>
 								<td>{{ $loop->iteration }}</td> 
-								<td>{{ $row->videojuego_id }}</td>
-								<td>{{ $row->jugador_id }}</td>
+								<td>{{ $row->videojuego->nombre }}</td>
+								<td>{{ $row->jugadore->nombre}}</td>
 								<td>{{ $row->tiempo_inicio }}</td>
 								<td>{{ $row->fecha }}</td>
 								<td>{{ $row->observacion }}</td>

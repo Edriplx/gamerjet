@@ -3,7 +3,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="createDataModalLabel">Create New Videojuego</h5>
+                <h5 class="modal-title" id="createDataModalLabel">Crear Nuevo Videojuego</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true close-btn">×</span>
                 </button>
@@ -12,7 +12,12 @@
 				<form>
             <div class="form-group">
                 <label for="categoria_id"></label>
-                <input wire:model="categoria_id" type="text" class="form-control" id="categoria_id" placeholder="Categoria Id">@error('categoria_id') <span class="error text-danger">{{ $message }}</span> @enderror
+                <select wire:model="categoria_id" type="text" class="form-control" id="categoria_id"
+                <option>Seleccione</option>
+                @foreach($categorias as $categoria)
+                <option value="{{$categoria->id}}">{{$categoria->tipo}}</option>
+                @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="nombre"></label>

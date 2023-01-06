@@ -10,13 +10,23 @@
             </div>
            <div class="modal-body">
 				<form>
-            <div class="form-group">
+                <div class="form-group">
                 <label for="videojuego_id"></label>
-                <input wire:model="videojuego_id" type="text" class="form-control" id="videojuego_id" placeholder="Videojuego Id">@error('videojuego_id') <span class="error text-danger">{{ $message }}</span> @enderror
+                <select wire:model="videojuego_id" type="text" class="form-control" id="videojuego_id"
+                <option>Seleccione</option>
+                @foreach($videojuegos as $videojuego)
+                <option value="{{$videojuego->id}}">{{$videojuego->nombre}}</option>
+                @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="aula_id"></label>
-                <input wire:model="aula_id" type="text" class="form-control" id="aula_id" placeholder="Aula Id">@error('aula_id') <span class="error text-danger">{{ $message }}</span> @enderror
+                <select wire:model="aula_id" type="text" class="form-control" id="aula_id"
+                <option>Seleccione</option>
+                @foreach($aulas as $aula)
+                <option value="{{$aula->id}}">{{$aula->nombre_aula}}</option>
+                @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="tiempo_inicio"></label>

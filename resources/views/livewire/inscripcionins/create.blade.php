@@ -3,20 +3,30 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="createDataModalLabel">Create New Inscripcionin</h5>
+                <h5 class="modal-title" id="createDataModalLabel">Crear Nueva Inscripción Individual</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true close-btn">×</span>
                 </button>
             </div>
            <div class="modal-body">
 				<form>
-            <div class="form-group">
+                <div class="form-group">
                 <label for="videojuego_id"></label>
-                <input wire:model="videojuego_id" type="text" class="form-control" id="videojuego_id" placeholder="Videojuego Id">@error('videojuego_id') <span class="error text-danger">{{ $message }}</span> @enderror
+                <select wire:model="videojuego_id" type="text" class="form-control" id="videojuego_id"
+                <option>Seleccione</option>
+                @foreach($videojuegos as $videojuego)
+                <option value="{{$videojuego->id}}">{{$videojuego->nombre}}</option>
+                @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="jugador_id"></label>
-                <input wire:model="jugador_id" type="text" class="form-control" id="jugador_id" placeholder="Jugador Id">@error('jugador_id') <span class="error text-danger">{{ $message }}</span> @enderror
+                <select wire:model="jugador_id" type="text" class="form-control" id="jugador_id"
+                <option>Seleccione</option>
+                @foreach($jugadores as $jugadore)
+                <option value="{{$jugadore->id}}">{{$jugadore->nombre}}</option>
+                @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="observacion"></label>

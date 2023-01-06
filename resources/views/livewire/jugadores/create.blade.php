@@ -3,7 +3,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="createDataModalLabel">Create New Jugadore</h5>
+                <h5 class="modal-title" id="createDataModalLabel">Crear Nuevos Jugadores</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true close-btn">×</span>
                 </button>
@@ -27,8 +27,13 @@
                 <input wire:model="correo" type="text" class="form-control" id="correo" placeholder="Correo">@error('correo') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
-                <label for="equipo_id"></label>
-                <input wire:model="equipo_id" type="text" class="form-control" id="equipo_id" placeholder="Equipo Id">@error('equipo_id') <span class="error text-danger">{{ $message }}</span> @enderror
+            <label for="equipo_id"></label>
+                <select wire:model="equipo_id" type="text" class="form-control" id="equipo_id"
+                <option>Seleccione</option>
+                @foreach($equipos as $equipo)
+                <option value="{{$equipo->id}}">{{$equipo->nombre_equipo}}</option>
+                @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="observacion"></label>
